@@ -2,7 +2,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:pennepasta_app/homepage.dart';
+import 'package:pennepasta_app/pages/login_page.dart';
 
 class SpashScreen extends StatefulWidget {
   @override
@@ -24,7 +24,7 @@ class _SpashScreenState extends State<SpashScreen> {
     Timer(Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => MyHomePage()),
+        MaterialPageRoute(builder: (context) => LoginPage()),
       );
     });
   }
